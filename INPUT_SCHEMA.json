@@ -1,18 +1,24 @@
 {
-    "title": "CheerioCrawler Template",
+    "title": "Zappos Scraper",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
-        "startUrls": {
-            "title": "Start URLs",
-            "type": "array",
-            "description": "URLs to start with.",
-            "editor": "requestListSources",
-            "prefill": [
-                {
-                    "url": "https://apify.com"
-                }
-            ]
+        "search": {
+            "title": "Search query",
+            "type": "string",
+            "description": "Search for anything on Zappos store. \n Examples: drinkware, men oxfords, boots, women slippers, etc",
+            "prefill": "drinkware",
+            "editor": "textfield"
+        },
+        "proxyConfig": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "It's recommended to leave the 'Automatic Proxy you can use automatic Apify proxies, Residentials or your own proxies.",
+            "prefill": { "useApifyProxy": true },
+            "default": { "useApifyProxy": true },
+            "editor": "proxy",
+            "sectionCaption": "Proxy configuration"
         }
-    }
+    },
+    "required": ["search", "proxyConfig"]
 }

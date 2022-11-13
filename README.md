@@ -1,24 +1,53 @@
-# CheerioCrawler project
+# What does [Actor Name] do?
 
-This template is a production ready boilerplate for developing with `CheerioCrawler`.
-Use this to bootstrap your projects using the most up-to-date code.
+[Actor Name] will enable you to get more data from [target website name with link] than the official [target website name] API.
 
-> We decided to split Apify SDK into two libraries, [Crawlee](https://crawlee.dev) and [Apify SDK v3](https://sdk.apify.com). Crawlee will retain all the crawling and scraping-related tools and will always strive to be the best web scraping library for its community. At the same time, Apify SDK will continue to exist, but keep only the Apify-specific features related to building actors on the Apify platform. Read the [upgrading guide](https://sdk.apify.com/docs/upgrading/upgrading-to-v3) to learn about the changes.
+[Actor Name] can scrape:
 
-If you're looking for examples or want to learn more visit:
+- data item type
+- data item type
+- data item type
+- data item type
 
-- [Crawlee + Apify Platform guide](https://crawlee.dev/docs/guides/apify-platform)
-- [Cheerio Tutorial](https://crawlee.dev/docs/guides/cheerio-crawler-guide)
-- [Documentation](https://crawlee.dev/api/cheerio-crawler/class/CheerioCrawler)
-- [Examples](https://crawlee.dev/docs/examples/cheerio-crawler)
+## Why scrape [target website name]?
 
-## Documentation reference
+[target website name] has X number of users and is a great source of data for [industry or use case].
 
-- [Crawlee](https://crawlee.dev)
-- [Apify SDK v3](https://sdk.apify.com)
-- [Apify Actor documentation](https://docs.apify.com/actor)
-- [Apify CLI](https://docs.apify.com/cli)
+Here are just some of the ways you could use that data:
 
-## Writing a README
+- use case 1
+- use case 2
+- use case 3
+- use case 4
 
-See our tutorial on [writing READMEs for your actors](https://help.apify.com/en/articles/2912548-how-to-write-great-readme-for-your-actors) if you need more inspiration.
+If you would like more inspiration on how scraping [target website name] could help your business or organization, check out our [industry pages](https://apify.com/industries).
+
+## How to scrape [target website name]
+
+It's easy to scrape [target website name with link] with [Actor Name]. Just follow these few steps and you'll get your data in a few minutes.
+
+1. Click on Try for free.
+2. Enter the keywords or search terms you want to scrape. Or enter a URL to start scraping.
+3. Click on Run.
+4. When [Actor Name] has finished, preview or download your data from the Dataset tab.
+
+## How much will it cost to scrape [target website name]?
+
+Apify gives you with $5 free usage credits every month on the [Apify Free plan](https://apify.com/pricing). You can get XXXX results per month from [Actor Name] for that, so those XXXX results will be completely free!
+
+But if you need to get more data regularly from [target website name], you should grab an Apify subscription. We recommend our [$49/month Personal plan](https://apify.com/pricing) - you can get up to XXXXXX every month with the $49 monthly plan!
+
+Or get XXXXXXXX results for $499 with the [Team plan](https://apify.com/pricing) - wow!
+
+## Results
+
+[example of JSON and/or HTML results]
+
+## Tips for scraping [target website name]
+
+- Tip 1
+- Tip 2
+
+## Is it legal to scrape [target website name]?
+
+Note that personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. We also recommend that you read our blog post: [is web scraping legal?](https://blog.apify.com/is-web-scraping-legal/)
