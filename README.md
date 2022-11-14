@@ -1,4 +1,4 @@
-# What does Zappos Scraper do?
+## What does Zappos Scraper do?
 
 Zappos Scraper enables you to extract data from [Zappos.com](https://www.zappos.com/).
 
