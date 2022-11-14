@@ -1,52 +1,43 @@
-# What does [Actor Name] do?
+# What does Zappos Scraper do?
 
-[Actor Name] will enable you to get more data from [target website name with link] than the official [target website name] API.
+Zappos Scraper enables you to extract data from [Zappos.com](https://www.zappos.com/).
 
-[Actor Name] can scrape:
+Zappos scraper can scrape product's:
 
-- data item type
-- data item type
-- data item type
-- data item type
+- Brand
+- Name
+- Price
+- URL
 
-## Why scrape [target website name]?
+## Why scrape Zappos.com?
 
-[target website name] has X number of users and is a great source of data for [industry or use case].
-
-Here are just some of the ways you could use that data:
-
-- use case 1
-- use case 2
-- use case 3
-- use case 4
+Zappos.com is an American online retailer owned by Amazon. With an estimated revenue of US$ 2 billion Zappos is one of the key players in American e-commerce and is a great source of data for shoe and clothing products.
 
 If you would like more inspiration on how scraping [target website name] could help your business or organization, check out our [industry pages](https://apify.com/industries).
 
-## How to scrape [target website name]
+## How to scrape Zappos.com
 
 It's easy to scrape [target website name with link] with [Actor Name]. Just follow these few steps and you'll get your data in a few minutes.
 
 1. Click on Try for free.
 2. Enter the keywords or search terms you want to scrape. Or enter a URL to start scraping.
 3. Click on Run.
-4. When [Actor Name] has finished, preview or download your data from the Dataset tab.
+4. When Zappos Scraper has finished its run, you can preview or download your data from the Dataset tab.
 
-## How much will it cost to scrape [target website name]?
+## How much will it cost to scrape Zappos.com?
 
-Apify gives you with $5 free usage credits every month on the [Apify Free plan](https://apify.com/pricing). You can get XXXX results per month from [Actor Name] for that, so those XXXX results will be completely free!
+You can get over 1000 results for less than US$1 using Zappos Scraper. Apify gives you with $5 free usage credits every month on the [Apify Free plan](https://apify.com/pricing). So, you can get thousands of product results from Zappos.com completely free!
 
-But if you need to get more data regularly from [target website name], you should grab an Apify subscription. We recommend our [$49/month Personal plan](https://apify.com/pricing) - you can get up to XXXXXX every month with the $49 monthly plan!
-
-Or get XXXXXXXX results for $499 with the [Team plan](https://apify.com/pricing) - wow!
+But if you need to get more data regularly from Zappos.com, considering subscribing to one of Apify's paid plans. We recommend our [$49/month Personal plan](https://apify.com/pricing).
 
 ## Results
 
-[example of JSON and/or HTML results]
+![Image](https://i.postimg.cc/rynPjSYy/image.png)
 
-## Tips for scraping [target website name]
+## Tips for scraping Zappos.com
 
-- Tip 1
-- Tip 2
+- Use specific search queries to get more targeted results
+- Make sure you are using proxies
 
 ## Is it legal to scrape [target website name]?
 
