@@ -1,17 +1,15 @@
-/* eslint-disable quotes */
-import { Actor } from "apify";
-import { CheerioCrawler } from "crawlee";
-import { router } from "./routes.js";
+import { Actor } from 'apify';
+import { CheerioCrawler } from 'crawlee';
+import { router } from './routes.js';
 
 // Initialize the Apify SDK
 await Actor.init();
 
 // Provide the actor with a search query
-const userInput = await Actor.getInput();
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-const { search } = userInput;
+interface Input {
+    search: string;
+}
+const { search } = (await Actor.getInput()) as Input;
 
 const proxyConfiguration = await Actor.createProxyConfiguration();
 
@@ -24,7 +22,7 @@ const crawler = new CheerioCrawler({
 await crawler.addRequests([
     `https://www.zappos.com/${search
         .trim()
-        .replace(" ", "-")}/.zso?t=${encodeURIComponent(search.trim())}&p=0`,
+        .replace(' ', '-')}/.zso?t=${encodeURIComponent(search.trim())}&p=0`,
 ]);
 
 await crawler.run();
