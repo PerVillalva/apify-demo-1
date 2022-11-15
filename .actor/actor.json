@@ -28,7 +28,7 @@
                     "display": {
                         "component": "table",
                         "properties": {
-                            "image": {
+                            "imgUrl": {
                                 "label": "Product image",
                                 "format": "image"
                             },
