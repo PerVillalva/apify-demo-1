@@ -1,0 +1,69 @@
+{
+    "actorSpecification": 1,
+    "name": "zappos-scraper",
+    "title": "Zappos Scraper",
+    "description": "",
+    "version": "1.0.0",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Zappos.com Dataset",
+            "description": "",
+            "views": {
+                "places": {
+                    "title": "Overview",
+                    "description": "It can take about one minute until the first results are available.",
+                    "transformation": {
+                        "fields": [
+                            "imgUrl",
+                            "brand",
+                            "name",
+                            "SKU",
+                            "inStock",
+                            "onSale",
+                            "price",
+                            "url"
+                        ]
+                    },
+                    "display": {
+                        "component": "table",
+                        "properties": {
+                            "image": {
+                                "label": "Product image",
+                                "format": "image"
+                            },
+                            "url": {
+                                "label": "Link",
+                                "format": "link"
+                            },
+                            "brand": {
+                                "label": "Brand",
+                                "format": "text"
+                            },
+                            "name": {
+                                "label": "Name",
+                                "format": "text"
+                            },
+                            "SKU": {
+                                "label": "SKU",
+                                "format": "text"
+                            },
+                            "inStock": {
+                                "label": "In Stock",
+                                "format": "boolean"
+                            },
+                            "onStock": {
+                                "label": "On Sale",
+                                "format": "boolean"
+                            },
+                            "price": {
+                                "label": "Price",
+                                "format": "text"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
