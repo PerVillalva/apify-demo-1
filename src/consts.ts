@@ -1,13 +1,13 @@
-/* eslint-disable quotes */
 export const LABELS = {
-    START: "START",
-    PRODUCT: "PRODUCT",
-    LIST: "LIST",
+    START: 'START',
+    PRODUCT: 'PRODUCT',
+    LIST: 'LIST',
 };
 
 // 👇 Create an interface strcture with specific object property types
 export interface Product {
     url?: string;
+    imgUrl?: string;
     brand: string;
     name?: string;
     SKU: string;

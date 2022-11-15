@@ -5,11 +5,11 @@ export const router = createCheerioRouter();
 
 router.addDefaultHandler(async ({ enqueueLinks, log, $, request, crawler }) => {
     const currentPage = $('span[aria-current="true"]').text();
-    const lastPage = Number($('span.Wk-z a:last-child').text());
+    const lastPage = Number($('#searchPagination span a:last-child').text());
 
     // Run this code only when the scraper is on the first page
     if (currentPage === '1') {
-        const totalProducts = $('span.jJ-z').text();
+        const totalProducts = $('h1 + span').text();
         log.info(totalProducts);
 
         // Loop through the total number of pages and enqueue all store pages for the particular search query
@@ -34,23 +34,24 @@ router.addDefaultHandler(async ({ enqueueLinks, log, $, request, crawler }) => {
 router.addHandler(LABELS.PRODUCT, async ({ request, $, log }) => {
     log.info(`Extracting data: ${request.url}`);
 
-    const priceElement = $('span[itemprop="price"]');
-
     // Define the results object based on the "Product" interface structure imported from consts.ts
     const results: Product = {
         url: request.loadedUrl,
+        imgUrl: $(
+            '#stage button[data-media="image"] img[itemprop="image"]').attr('src'),
         brand: $('span[itemprop="brand"]').text().trim(),
         name: '',
         SKU: $('*[itemprop~="sku"]').text().trim(),
         inStock: !request.url.includes('oosRedirected=true'), // Check if product is in stock. If not, set inStock property to false
         onSale: false,
-        price: `${priceElement.text()}`,
+        price: $('span[itemprop="price"]').text(),
     };
 
     // Check if product is on sale. If true, add the product's original price to the results object
-    if (priceElement.hasClass('JA-z')) {
+    if ($('div[itemprop="offers"]').text().includes('OFF')) {
         results.onSale = true;
-        results.originalPrice = $('.SA-z').text();
+        results.originalPrice = $(
+            'div[itemprop="offers"] > span:nth-child(2) > span:nth-child(2) > span:nth-child(2)').text();
     }
 
     /* Some Zappos products link to a special Zapos store named "The Style Room".
@@ -58,7 +59,9 @@ router.addHandler(LABELS.PRODUCT, async ({ request, $, log }) => {
     if (request.url.includes('the-style-room')) {
         results.name = $('*[itemprop~="name"]').text().trim();
     } else {
-        results.name = $('span.EW-z').text().trim();
+        results.name = $('meta[itemprop="name"]')
+            .attr('content')
+            ?.split(' ')[1];
     }
 
     // Push results to the dataset
