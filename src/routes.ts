@@ -60,8 +60,7 @@ router.addHandler(LABELS.PRODUCT, async ({ request, $, log }) => {
         results.imgUrl = $('#default-image').attr('src');
     } else {
         results.name = $('meta[itemprop="name"]')
-            .attr('content')
-            ?.split(' ')[1];
+            .attr('content');
         results.imgUrl = $(
             '#stage button[data-media="image"] img[itemprop="image"]').attr('src');
     }
