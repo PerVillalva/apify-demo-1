@@ -14,7 +14,7 @@
             "title": "Proxy configuration",
             "type": "object",
             "description": "It's recommended to leave the 'Automatic Proxy you can use automatic Apify proxies, Residentials or your own proxies.",
-            "prefill": { "useApifyProxy": true },
+            "prefill": { "useApifyProxy": true, "apifyProxyCountry": "US" },
             "default": { "useApifyProxy": true },
             "editor": "proxy",
             "sectionCaption": "Proxy configuration"
