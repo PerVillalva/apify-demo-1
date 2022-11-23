@@ -10,7 +10,7 @@
             "title": "Zappos.com Dataset",
             "description": "",
             "views": {
-                "places": {
+                "products": {
                     "title": "Overview",
                     "description": "It can take about one minute until the first results are available.",
                     "transformation": {
@@ -52,7 +52,7 @@
                                 "label": "In Stock",
                                 "format": "boolean"
                             },
-                            "onStock": {
+                            "onSale": {
                                 "label": "On Sale",
                                 "format": "boolean"
                             },
