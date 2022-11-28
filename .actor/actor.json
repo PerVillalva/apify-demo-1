@@ -37,27 +37,21 @@
                                 "format": "link"
                             },
                             "brand": {
-                                "label": "Brand",
                                 "format": "text"
                             },
                             "name": {
-                                "label": "Name",
                                 "format": "text"
                             },
                             "SKU": {
-                                "label": "SKU",
                                 "format": "text"
                             },
                             "inStock": {
-                                "label": "In Stock",
                                 "format": "boolean"
                             },
                             "onSale": {
-                                "label": "On Sale",
                                 "format": "boolean"
                             },
                             "price": {
-                                "label": "Price",
                                 "format": "text"
                             }
                         }
